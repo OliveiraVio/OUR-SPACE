@@ -1,0 +1,958 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(118, 146, 171);
+}
+
+/**************************************************/
+/**                  HEADER                     **/
+/************************************************/
+img{
+    padding: 20px;
+}
+
+.suporte{
+    display: flex;/*Define layout com flexivel, permitindo os elementos filos sejam dispostos em uma linha ou coluna*/
+    align-items: center;/*Alinha os elementos filhos verticalmete no centro*/
+    height: 200px;/*Define a altura os elementos com 200pixels*/
+}
+
+.nossoSuporte{
+    display: flex;
+    align-items: center;
+    color: white;/*Define a cor do texto como branca*/
+    padding-left: 5px;/*Adiciona um espaçamento a direita do elemento*/
+}
+
+.logo{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 300px;
+}
+.acertar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 300px;
+}
+
+.menuh{
+    list-style: none; /*Remove a formatação de lista*/
+    padding: 20px 0px 20px 0px;
+    background-color: rgb(180, 98, 174);
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.menuh li{
+    display: inline;/*Faz com que os elementos li sejam exibidos lado a lado*/
+}
+
+.menuh li a{
+    color: white;
+    padding: 10px;
+    display: flex;
+    display: inline;
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.menuh a::after{
+    content: '';/*Define o conteudo do pseudo-elemento como vazio*/
+    width: 3.5rem;
+    height: 1px;
+    background-color: white;
+    position: absolute;/*Define a posição do pseudo-elemento como absoluto*/
+    bottom: -3px; /*Definir posição do pseudo-elemento com 3pixels  abaixo do elemento pai*/
+    left: 50%; /*Definir a posição do pseudo elemento como 50% a esquerda do elemento pai*/
+    transform: translate(-50%, 50%); /*Define a transformação do pseudo elemento como uma translação de -50% a esquerda e 50% pra cima*/
+    opacity: 0;/*Definindo a opacidade do pseudo elemento como 0 (invisivel)*/
+    transition: all 0.3s ease;
+}
+
+.menuh a:hover::after{
+    opacity: 1;
+}
+
+.menuh a:hover{
+    color: antiquewhite;
+}
+
+/**************************************************/
+/**                INICIA-SE O BANNER            **/
+/*************************************************/
+
+.banner{
+    background-image: linear-gradient(80deg, #000000, #00000020), url('Capas/fotoinicial.png');/*Define a imagem do fundo como uma gradiente de preto a preto claro e uma imagem de capa*/ 
+    height: 700px;
+    background-size: cover;
+    right: 150px;
+    padding: 200px 650px 0px 60px;
+    background-position: center;
+    margin-bottom: -90px;
+    margin-top: -10px;
+
+}
+
+.textobanner{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.textobanner p{
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.textobanner h2{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.textobanner a{
+    margin-top: 2rem;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    display: inline-block;/*Definir o layout do link como branco*/
+    padding: 1rem 3rem;/*Adiciona um espaçamento de 1rem em cima e embaixo e 3rem a esquerda e a direita do link*/
+    border-radius: 3rem;/*Definir a borda do link com um arredondamento de 3rem*/
+}
+
+.main-conteudo{
+    background-color: rgb(red, green, blue);
+}
+
+/**************************************************/
+/**                TAGS                          **/
+/*************************************************/
+
+.align{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.base-conteudo{
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;/*Adiciona um espaço de 3rem entre as células de grade usando gap*/
+    padding: 3rem;
+    margin-top: 50px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    width: 250px;
+    background-color: white;
+    padding: 1.0rem 0;
+    box-shadow: 10px 5px 5px rgb(red, green, blue);
+}
+
+.card-categ{
+    display: flex;
+    flex-direction: column;/*Define a direção flexivel para a coluna usando flex-direction*/ 
+    gap: 0.5rem;
+}
+
+.card-categ span{
+    font-weight: 700;/*Definir o peso da fonte para 700 usando font-weight*/
+    font-size: 1.2rem;
+    color: #db9797;
+} 
+
+
+
+.sobrenos{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(220, 173, 203);
+}
+
+.just{
+    display: flex;
+    justify-items: center;
+    padding: 50px 150px 50px 150px;
+}
+
+.texto{
+    font-size: 14px;
+    text-align: justify;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+
+/**************************************************/
+/**                INICIA-SE O BANNER            **/
+/*************************************************/
+
+.titulos{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+/**************************************************/
+/**                PRODUTOS                      **/
+/*************************************************/
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.container-categ{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: calc(3rem);
+}
+
+.card-categ{
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 2rem;
+    gap: 1rem;
+}
+
+.card-categ a{
+    text-decoration: none;    
+}
+
+.categ-croche{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/croche.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-biquinis{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/biquini.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-maio{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/maio.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-toalhas{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/toalha.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-ecobags{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/ecobag.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-cangas{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/canga.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-pranchas{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/prancha.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-chinelos{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/chinelo.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-presilhas{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/presilha.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+.categ-saidadpraia{
+    background-image: linear-gradient(#00000000, #00000000), url('CAPA-PRODUTP/saida.jpg');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 300px;
+}
+
+/*.card-categ p::after{
+    content: '';/*Define o conteudo do pseudo elemento como uma string vazia, necessária para criar o pseudo elemento*/
+    /*width: 3.5rem;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;/*Define a posição do pseudo elemento como absoluta, o que nos permite posiciona-lo em relação ao seu elemento pai*/
+    /*bottom: -1rem;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}*/
+
+.card-categ span{
+    font-size: 0.8rem;
+    color: white;
+    cursor: pointer;/*Define o formato do cursor como uma mão apontando ao passar o mouse sobre o span*/
+}
+
+.card-categ p{
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;/*Define o formato do cursor como uma mão apontando ao passar o mouse sobre o span*/
+}
+
+.card-categ span:hover{
+    color: white;
+}
+
+/************ESTILOS*************/
+
+.textobanner p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(199, 127, 221);
+}
+
+.textobanner h2{
+    font-family: cursive;
+    color: rgb(186, 235, 88);
+}
+
+.align {
+    display: flex;
+}
+
+.card {
+    background-color: white;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/***********************************/
+/**************PRODUTOS*************/
+/***********************************/
+.container-produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);/*Mantém 4 colunas em 1 linha*/
+    gap: 2rem;
+    margin: 0px 50px 50px 50px;
+}
+
+.card-produto{
+    background-color: rgb(179, 125, 175);
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    width: 100; /*Garante que o card ocupe a largura da coluna*/
+}
+
+.container-imagem{
+    position: relative;
+}
+
+.container-imagem img{
+    width: 100%;
+}
+
+.container-imagem .desconto{
+    position: absolute;
+    left: 0;
+    background-color: #695a49;
+    color: #fff;
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.card-produto:hover .desconto{
+    background-color: #000;
+}
+
+/*****ANIMAÇÃO BOTÕES*****/
+
+.button-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: absolute;/*Posição absoluta para posicionamento especifico*/
+    top: 0;/*Alinhamento no topo*/
+    right: -2rem;/*Alinhamento a direita*/
+    z-index: -1;/*Define a sobreposição inicial*/
+    transition: all 0.4s ease;/*Animação de transição suave*/
+}
+
+.button-group span{
+    border: 1px solid #695A49;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.button-group span:hover{
+    background-color: #695A49;
+}
+
+.button-group span i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.button-group span:hover i{
+    color: #fff;
+}
+
+.card-produto:hover .button-group{
+    z-index: 0;
+    right: -1rem;
+}
+
+/********INICIA AS ESTRELASS*********/
+
+.content-card-produto{
+    display: grid;/*Definir um layout de grade*/
+    justify-items: center;/*Centraliza os items horizontalmente*/
+    grid-template-columns: 1fr 1fr;/*Cria duas colunas de tamanho igual*/
+    grid-template-rows: repeat(4, min-content);/*Cria quatro linhas de altura minima*/
+    row-gap: 1rem;/*Espaçamento vertical entre as linhas*/
+}
+
+.estrelas{
+    grid-row: 1/2;
+    grid-column: 1/-1;
+}
+
+.estrelas i{
+    font-size: 1.2rem;/*Define o tamanho das estrelas*/
+    color: #695a49;/*Define a cor das estrelas*/
+}
+
+.content-card-produto h3{
+    grid-row: 2/3;/*Ocupa a segunda linha da grade*/
+    grid-column: 1/-1;/*Ocupa todas as colunas da grade*/
+    font-weight: 400;/*Define o peso da fonte*/
+    font-size: 1.2rem;/*Define o tamanho da fonte*/
+    margin-bottom: 1rem;/*Define a margem inferior*/
+    cursor: pointer;/*Muda o cursor para indicar que o titulo é clicavel*/
+}
+
+.content-card-produto h3:hover{
+    color: #695A49;/*Mudar a cor do titulo ao passar o mouse*/
+}
+
+.add-cart {
+    justify-self: start;/*Alinha o botão ao inicio horizontalmente*/
+    border: 2px solid #9691dc;/*Define uma borda ao redor do botão*/
+    padding: 1rem;
+    border-radius: 50%;/*Define o formato circular nos cantos, arredondamento*/
+    cursor: pointer;
+    transition: all 0.4s ease;/*Transição suave ao alterar estilos*/
+    display: flex;/*Define um layout flexivel*/
+    align-items: center;
+    justify-content: center;/*Centralizada o conteudo horizontalmente*/
+    background-color: #9691dc;
+}
+
+.add-cart:hover{
+    background-color: white;/*Muda de cor de fundo do botao ao passar o mouse*/
+}
+
+.add-cart i{
+    font-size: 0.9rem;
+    color: white;
+}
+
+.add-cart:hover i{
+    color: #969;/*Muda a cor do icone ao passar o mouse*/
+}
+
+.content-card-produto .preco{
+    justify-self: end;/*Alinha o preço ao final horizontal*/
+    align-items: center;/*Centraliza o preço verticalmente*/
+    font-size: 1.4rem;/*Define o tamanho da fonte do preço*/
+    font-weight: 600;
+}
+
+.content-card-produto .preco span{
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-decoration: line-through;/*Aplica um risco sobre o preço*/
+    color: #777;
+    margin-left: 0.5rem;/*Define uma margem a esquerda do preço original*/
+}
+
+/**************IMAGENS**************/
+
+.imagem-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+
+.footer {
+	background-color: #695a49;
+}
+
+.container-footer {
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+	padding: 3rem;
+	background-color: #c7a17a;
+}
+
+.menu-footer {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 30rem;
+	gap: 3rem;
+	justify-items: center;
+}
+
+.title-footer {
+	font-weight: 600;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+}
+
+.contact-info,
+.information,
+.my-account,
+.newsletter {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.contact-info ul,
+.information ul,
+.my-account ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.contact-info ul li,
+.information ul li,
+.my-account ul li {
+	list-style: none;
+	color: #fff;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.information ul li a,
+.my-account ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+.information ul li a:hover,
+.my-account ul li a:hover {
+	color: black;
+}
+
+.social-icons {
+	display: flex;
+	gap: 1.5rem;
+}
+
+.social-icons span {
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-icons span i {
+	color: #fff;
+	font-size: 1.4rem;
+}
+
+.facebook {
+	background-color: #3b5998;
+}
+
+.twitter {
+	background-color: #00acee;
+}
+
+.youtube {
+	background-color: #c4302b;
+}
+
+.pinterest {
+	background-color: #c8232c;
+}
+
+.instagram {
+	background: linear-gradient(
+		#405de6,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#fcaf45
+	);
+}
+
+.content p {
+	font-size: 0.8rem;
+	color: #fff;
+	font-weight: 300;
+}
+
+.content input {
+	outline: none;
+	background: none;
+	border: none;
+	border-bottom: 2px solid #d2b495;
+	cursor: pointer;
+	padding: 0.5rem 0 1.2rem;
+	color: black;
+	display: block;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
+	width: 100%;
+	font-family: inherit;
+}
+
+.content input::-webkit-input-placeholder {
+	color: #eee;
+}
+
+.content button {
+	border: none;
+	background-color: #000;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 1rem 3rem;
+	border-radius: 2rem;
+	font-size: 0.9rem;
+	font-family: inherit;
+	cursor: pointer;
+	font-weight: 400;
+}
+
+.content button:hover {
+	background-color:#695A49;
+	color: white;
+}
+
+.copyright {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+	border-top: 1px solid #d2b495;
+	justify-content: center;
+	align-items: center;
+}
+
+.copyright p {
+	font-weight: 400;
+	font-size: 1.1rem;
+}
+
+/*************************************/
+/**         LOCALIZAÇÃO            **/
+/***********************************/
+
+
+.local{
+    display: flex;
+    gap: 2rem;
+}
+
+form{
+    width: 100%; /*Define a largura do formulario com 100%*/
+    max-width: 400px;/*Define a largura máxima do formulário*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 768px       */
+/* ********************************** */
+@media (max-width: 768px) {
+	html {
+		font-size: 55%;
+	}
+
+	.hero {
+		padding: 2rem;
+	}
+
+	.customer-support {
+		display: none;
+	}
+
+	.content-shopping-cart {
+		display: none;
+	}
+
+	.navbar {
+		padding: 1rem 2rem;
+	}
+
+	.navbar .fa-bars {
+		display: block;
+		color: #fff;
+		font-size: 3rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		margin: 0 auto;
+		padding: 25rem 0;
+	}
+
+	.container-features {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 3rem 2rem;
+	}
+
+	.card-feature {
+		padding: 2rem;
+	}
+
+	.heading-1 {
+		font-size: 2.4rem;
+	}
+
+	.card-category {
+		height: 12rem;
+	}
+
+	.card-category p {
+		font-size: 2rem;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.card-category span {
+		font-size: 1.4rem;
+	}
+
+	.container-options {
+		align-items: center;
+	}
+
+	.container-options span {
+		text-align: center;
+		padding: 1rem 2rem;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 15rem);
+	}
+
+	.container-blogs {
+		overflow: hidden;
+		grid-template-columns: 1fr 1fr;
+
+		height: 52rem;
+	}
+
+	.menu-footer {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.copyright {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+	}
+}
+
+
+/* ********************************** */
+/*       MEDIA QUERIES -- 468px       */
+/* ********************************** */
+@media (max-width: 468px) {
+	html {
+		font-size: 42.5%;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		padding: 22rem 0;
+	}
+
+	.heading-1 {
+		font-size: 2.8rem;
+	}
+
+	.card-feature {
+		flex-direction: column;
+		border-radius: 2rem;
+	}
+
+	.feature-content {
+		align-items: center;
+	}
+
+	.feature-content p {
+		font-size: 1.4rem;
+		text-align: center;
+	}
+
+	.feature-content span {
+		font-size: 1.6rem;
+		text-align: center;
+	}
+
+	.container-options span {
+		font-size: 1.8rem;
+		padding: 1rem 1.5rem;
+		font-weight: 500;
+	}
+
+	.container-products {
+		grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		gap: 1rem;
+	}
+
+	.container-img .discount {
+		font-size: 2rem;
+	}
+
+	.content-card-product h3 {
+		font-size: 2.2rem;
+	}
+
+	.gallery {
+		grid-template-rows: repeat(2, 20rem);
+	}
+
+	.blogs {
+		padding: 2rem;
+	}
+
+	.container-blogs {
+		grid-template-columns: 1fr;
+		height: 75rem;
+	}
+
+	.content-blog h3 {
+		font-size: 2.4rem;
+	}
+
+	.content-blog span {
+		font-size: 1.8rem;
+	}
+
+	.content-blog p {
+		font-size: 2.2rem;
+	}
+
+	.btn-read-more{
+		font-size: 1.8rem;
+	}
+
+	.contact-info ul,
+	.information ul,
+	.my-account ul{
+		display: none;
+	}
+
+	.contact-info {
+		align-items: center;
+	}
+
+	.menu-footer{
+		grid-template-columns: 1fr;
+	}
+
+	.content p{
+		font-size: 1.6rem;
+	}
+}
+
